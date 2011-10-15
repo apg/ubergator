@@ -9,10 +9,13 @@
 ;(function(win) {
 
 
+var city_prefix     = "Occupy ";
+var tabstop_regex   = /\t+/,
+    nonword_regex   = /\W+/,
+    lineend_regex   = /\r|\n/;
 
-var tabstop_regex = /\t/;
 function handle_tab_text( txt_str ) {
-    var lines = txt_str && txt_str.split(/\r|\n/) || [];
+    var lines = txt_str && txt_str.trim().split(lineend_regex) || [];
     var i=lines.length, city_data, data=[];
     while(i--) {
         city_data = lines && lines[i].split( tabstop_regex );
@@ -25,10 +28,13 @@ function handle_tab_text( txt_str ) {
     }
     return data.reverse();
 }
+function normalize( prefix, str ) {
+    return str && str.replace(prefix, "").replace(nonword_regex, "").toLowerCase() || str;
+}
 function occupyCitySort(a,b) {
-    var prefix = "Occupy "; // dirty, wrong, working
-    var a_str = a.text.replace(prefix, "").replace(/\W+/, "").toLowerCase();
-    var b_str = b.text.replace(prefix, "").replace(/\W+/, "").toLowerCase();
+// dirty, wrong, working
+    var a_str = normalize(city_prefix, a.text);
+        b_str = normalize(city_prefix, b.text);
 
     if(a_str < b_str) {
         return -1;
@@ -69,11 +75,11 @@ var ubergator = {
         });
     },
     addCitiesList:function($el) {
-        var promise = this.getCities();
+        var promise = this.getCities(), self=this;
         promise.done(function(data) {
             var city_data = handle_tab_text(data);
             city_data.sort(occupyCitySort);
-
+            self.storage.facebook_cities = city_data;
             var frag = newT.render("showCities.ubergator", {
                 "city_data":city_data,
                 pagination:{
@@ -82,8 +88,11 @@ var ubergator = {
                     total:10000
                 }
             });
+            // TODO
+            // something else, list is 340+ items
             $el.append(frag);
         });
+        return promise;
     },
     getCities:function() {
         var promise = this.remoteCall(this.cities_url, {}, {
@@ -118,7 +127,12 @@ var ubergator = {
     }
 
 }
+// stuff
+ubergator.storage = {
+    facebook_cities:[]
+};
 
+// the DOM.. see stuff on page..
 ubergator.dom = {
     saveTemplates:function() {
         newT.save("addRss.ubergator", function(data) {
