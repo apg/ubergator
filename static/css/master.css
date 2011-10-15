@@ -1,0 +1,69 @@
+ /*  RESETS   */
+
+ html, body {height: 100%;}
+ * { padding:0; margin:0; }
+ body {
+     font-family:Helvetica, Arial, sans-serif;
+     font-size:12px;
+     color:#333;
+     position:relative;
+ }
+ h1,h2,h3,h4,h5,h6,input,select,option,textarea {
+     font-size:12px;
+     font-family:Helvetica, Arial, sans-serif;
+ }
+ ul {
+     list-style:none;
+ }
+ img {
+     border:0;
+ }
+ .hr { clear:both; float:none; }
+ .hr hr { display:none; }
+ a {
+     text-decoration:none;
+     color:#5895bd;
+     outline:none;    
+ }
+ a:hover,
+ a.hover {
+     color:#4D81B3;
+ }
+ 
+
+ fieldset {
+   border-width: 0;
+   margin: 0;
+   padding: 0;
+ }
+
+ textarea {
+   resize: none;
+ }
+ 
+ /* end resets  */
+
+
+ #container {
+     width:500px;
+     margin:0 auto;
+    
+ }
+
+ #container h1 {
+     font-size:38px;
+ }
+
+ #container p {
+     margin:0 0 10px;
+ }
+
+ #container #rss_form input[type=text] {
+     border:1px solid #ccc;
+     padding:3px 8px;
+     width:250px;
+     margin-right:5px;
+ }
+ #container #rss_form button {
+     padding:3px 8px;
+ }

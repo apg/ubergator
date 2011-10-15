@@ -15,7 +15,23 @@ format like below, please
      'lon': <if available somehow>,
      'associatedGroup': <if discernable>,
      'type': <essentially source, twitter, rss, atom, facebook, meetup>,
-     'object': { 'jsonified object' that this represents 
+     'object': { 'jsonified object' that this represents }
     }
 
 
+running html/static
+-------
+
+b/c every good website needs at least a page on the internet
+
+    cd static
+    python -m SimpleHTTPServer 8005
+
+In a web brower, <http://localhost:8005>
+
+simulated save rss feed, nothing fancy.
+
+<http://localhost:8005/add_feeds.html>
+
+
+    http://localhost:8005/data/save/endpoint?url=http%3A%2F%2Ffoo.com%2Fafadfd

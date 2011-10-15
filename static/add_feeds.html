@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    
+        <title>Add_feeds</title>
+        <link rel="stylesheet" href="css/master.css" type="text/css" media="screen" charset="utf-8">
+
+    </head>
+    <body>
+        <div id="container">
+            <h1>Add rss feed</h1>
+            <div id="mount_point">
+                
+            </div>
+        </div>
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" charset="utf-8">
+</script>
+<script type="text/javascript" src="https://raw.github.com/jeffreytierney/newT/master/newT.min.js" charset="utf-8">
+</script>
+<script type="text/javascript" src="js/ubergator.js" charset="utf-8">
+    
+</script>
+        <script type="text/javascript" charset="utf-8">
+            $(function(){
+                    ubergator.start();
+                    ubergator.addRssForm( $("#mount_point") );
+                // on body load
+            }); 
+        </script>
+    </body>
+</html>
