@@ -35,3 +35,14 @@ simulated save rss feed, nothing fancy.
 
 
     http://localhost:8005/data/save/endpoint?url=http%3A%2F%2Ffoo.com%2Fafadfd
+
+bitly.py
+------
+
+demo / sample example
+
+    # this is SERIOUSLY inefficient
+    # call can support 15 at once, this demo uses a link
+
+    python bitly.py "http://www.meetup.com/occupytogether/New-York-NY/406522/"
+
