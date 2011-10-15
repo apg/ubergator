@@ -57,7 +57,13 @@
  #container p {
      margin:0 0 10px;
  }
-
+#container ul {
+    margin:4px 0;
+}
+#container h2 {
+    margin:2px 0 6px;
+    font-size:18px;
+}
  #container #rss_form input[type=text] {
      border:1px solid #ccc;
      padding:3px 8px;
@@ -66,4 +72,9 @@
  }
  #container #rss_form button {
      padding:3px 8px;
+ }
+
+ #container .ug_cityItem {
+
+    font-size:15px;
  }

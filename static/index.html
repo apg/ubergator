@@ -15,6 +15,11 @@
         <ul>
             <li><a href="add_feeds.html">Add rss feed</a></li>
         </ul>
+
+        <h2>Occupy Cities | Facebook</h2>
+        <div id="mount_point">
+            
+        </div>
         </div>
 
 
@@ -23,6 +28,16 @@
 <script type="text/javascript" src="https://raw.github.com/jeffreytierney/newT/master/newT.min.js" charset="utf-8">
 </script>
 <script type="text/javascript" src="js/ubergator.js" charset="utf-8">
+</script>
+
+<script type="text/javascript" charset="utf-8">
+$(function() {
+        
+ubergator.start();
+ubergator.addCitiesList( $("#mount_point") );
+
+
+});
 </script>
     </body>
 </html>
