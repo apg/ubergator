@@ -12,18 +12,31 @@
 
 var tabstop_regex = /\t/;
 function handle_tab_text( txt_str ) {
-    var lines = txt_str.split(/\r|\n/);
+    var lines = txt_str && txt_str.split(/\r|\n/) || [];
     var i=lines.length, city_data, data=[];
     while(i--) {
         city_data = lines && lines[i].split( tabstop_regex );
         if(!city_data[0] || !city_data[1]) continue;
         city_data && data.push({
             url:city_data[0],
-            text:city_data[1]
+            text:city_data[1].trim()
         });
 
     }
     return data.reverse();
+}
+function occupyCitySort(a,b) {
+    var prefix = "Occupy "; // dirty, wrong, working
+    var a_str = a.text.replace(prefix, "").replace(/\W+/, "").toLowerCase();
+    var b_str = b.text.replace(prefix, "").replace(/\W+/, "").toLowerCase();
+
+    if(a_str < b_str) {
+        return -1;
+    } 
+    if(b_str < a_str) {
+        return 1;
+    }
+    return 0;
 }
 var ubergator = {
     save_url:"/data/save/endpoint",
@@ -59,6 +72,8 @@ var ubergator = {
         var promise = this.getCities();
         promise.done(function(data) {
             var city_data = handle_tab_text(data);
+            city_data.sort(occupyCitySort);
+
             var frag = newT.render("showCities.ubergator", {
                 "city_data":city_data,
                 pagination:{

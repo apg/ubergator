@@ -117,7 +117,7 @@ http://www.facebook.com/OccupyIND	Occupy Evansville
 http://www.facebook.com/pages/Occupy-Fort-Wayne/166227116796438	Occupy Fort Wayne
 http://www.facebook.com/OccupyIND	Occupy Indianapolis
 http://www.facebook.com/pages/Occupy-Lafayette/243206355729392	Occupy LaFayette
-http://www.facebook.com/pages/Occupy-Smalltown-Indiana/253156961393839?ref=pb	Occupy Smalltown Indiana<br />
+http://www.facebook.com/pages/Occupy-Smalltown-Indiana/253156961393839?ref=pb	Occupy Smalltown Indiana
 https://www.facebook.com/event.php?eid=273043619385874	Occupy South Bend
 https://www.facebook.com/pages/Occupy-ISU/243821605665859	Occupy Ames
 http://www.facebook.com/pages/Occupy-Cedar-Rapids/272733412757798	Occupy Cedar Rapids
@@ -157,7 +157,8 @@ http://www.facebook.com/OccupyMichigan?ref=pb	Occupy Michigan
 http://www.facebook.com/event.php?eid=300418863307739	Occupy Saginaw
 http://www.facebook.com/pages/Occupy-Southeast-Michigan/140333112731122?ref=pb	Occupy Southeast Michigan
 http://www.facebook.com/OccupyTheUP	Occupy the UP
-http://www.facebook.com/groups/183437245067211/?ref=ts	Occupy Duluth</a> and <a href="http://www.facebook.com/OccupyTwinPorts	Occupy Twin Ports
+http://www.facebook.com/groups/183437245067211/?ref=ts	Occupy Duluth
+http://www.facebook.com/OccupyTwinPorts	Occupy Twin Ports
 http://www.facebook.com/pages/Occupy-Minneapolis/293392724011015?ref=pb	Occupy Minneapolis
 http://www.facebook.com/OccupyMN?ref=pb	Occupy Minnesota
 http://www.facebook.com/pages/Occupy-Rochester-MN/295117433847608	Occupy Rochester
@@ -307,7 +308,7 @@ http://www.facebook.com/pages/Occupy-Tacoma/157706674319636	Occupy Tacoma
 http://www.facebook.com/occupytricitieswa?sk=info	Occupy Tri-Cities
 http://www.facebook.com/occupyvancouverwashington	Occupy Vancouver
 http://www.facebook.com/pages/Occupy-Wenatchee-Washington/141071799323476?ref=pb	Occupy Wenatchee
-http://www.facebook.com/pages/Occupy-Yakima/289343207745425?sk=info	Occupy Yakima<
+http://www.facebook.com/pages/Occupy-Yakima/289343207745425?sk=info	Occupy Yakima
 https://www.facebook.com/pages/OccupyCharlestonWV/117738231666392	Occupy Charleston
 https://www.facebook.com/occupyhuntington	Occupy Huntington
 https://www.facebook.com/OccupyMorgantown	Occupy Morgantown
